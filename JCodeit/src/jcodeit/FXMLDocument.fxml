@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.web.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="1354.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jcodeit.FXMLDocumentController">
+   <children>
+      <ListView fx:id="flist" layoutX="2.0" layoutY="27.0" prefHeight="517.0" prefWidth="189.0" />
+      <TabPane fx:id="LogTabs" layoutX="4.0" layoutY="548.0" prefHeight="157.0" prefWidth="1328.0" tabClosingPolicy="UNAVAILABLE" />
+      <TabPane fx:id="codeTabs" layoutX="193.0" layoutY="28.0" prefHeight="517.0" prefWidth="1165.0" stylesheets="@checkbox.css" />
+      <MenuBar fx:id="mb">
+         <menus>
+            <Menu fx:id="mfile" mnemonicParsing="false" onAction="#actionPerformed" text="_File   ">
+               <items>
+                  <MenuItem fx:id="miNew" mnemonicParsing="false" onAction="#actionPerformed" text="New                                      " />
+                  <MenuItem fx:id="miOpen" mnemonicParsing="false" onAction="#actionPerformed" text="Open                               " />
+                  <MenuItem fx:id="miSave" mnemonicParsing="false" onAction="#actionPerformed" text="Save                                " />
+                  <MenuItem fx:id="miSaveAs" mnemonicParsing="false" onAction="#actionPerformed" text="Save As                           " />
+                  <MenuItem fx:id="miExit" mnemonicParsing="false" onAction="#actionPerformed" text="Exit                                  " />
+               </items>
+            </Menu>
+            <Menu fx:id="mEdit" mnemonicParsing="false" onAction="#actionPerformed" text="_Edit   ">
+               <items>
+                  <MenuItem fx:id="miRemove" mnemonicParsing="false" onAction="#actionPerformed" text="Remove                                   " />
+                  <MenuItem fx:id="miRemoveAll" mnemonicParsing="false" onAction="#actionPerformed" text="Remove All                              " />
+               </items>
+            </Menu>
+            <Menu fx:id="mExecute" mnemonicParsing="false" onAction="#actionPerformed" text="E_xecute ">
+               <items>
+                  <MenuItem fx:id="miCompile" mnemonicParsing="false" onAction="#actionPerformed" text="Compile                       " />
+                  <MenuItem fx:id="miRun" mnemonicParsing="false" onAction="#actionPerformed" text="Run" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="_Help   ">
+               <items>
+                  <MenuItem fx:id="miAbout" mnemonicParsing="false" onAction="#actionPerformed" text="About                         " />
+                  <MenuItem fx:id="jDocs" mnemonicParsing="false" onAction="#actionPerformed" text="Java Documentation  ">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="J" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

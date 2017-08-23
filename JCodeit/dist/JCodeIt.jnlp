@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JCodeIt.jnlp">
+  <information>
+    <title>JCodeIt</title>
+    <vendor>onk_r</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JCodeIt.jar" size="24649" download="eager" />
+    <jar href="lib\rsyntaxtextarea-2.5.8.jar" size="1056316" download="lazy" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JCodeIt" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="jcodeit.JCodeIt"  name="JCodeIt" />
+  <update check="always"/>
+</jnlp>
