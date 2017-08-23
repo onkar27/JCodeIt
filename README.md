@@ -8,5 +8,7 @@ Supported languages are       <br>
 
 API Used : RSyntaxTextArea (open source https://github.com/bobbylight/RSyntaxTextArea)
 
+Used to give styles to TextArea of javaFX.
+
 RSyntaxTextArea is a customizable, syntax highlighting text component for Java Swing applications.
 It is modified to used in JavaFX.
